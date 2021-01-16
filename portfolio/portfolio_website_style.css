@@ -1,0 +1,268 @@
+/* GENERAL STYLING */
+body {
+    margin: 0%;
+}
+
+/* HEADING ELEMENT */
+h1 {
+    text-transform: uppercase;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 3%;
+    color: black;
+}
+
+h1:hover {
+    filter: grayscale(5%);
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+/* PORTFOLIO TITLE TEXT */
+.white-text {
+    color: #fff;
+}
+
+/* PARAGRAPH ELEMENTS */
+p {
+    font-family: Cambria;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p:hover {
+    transition: transform 1s;
+    transform: scale(1.01);
+}
+
+/* CENTER ALL TEXT WITH CENTER CLASS */
+.center {
+    text-align: center;
+}
+ 
+.center:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+
+/* ANCHOR ELEMENTS */
+a {
+    color: blue;
+}
+
+/* QUOTATION ELEMENT */
+q {
+    font-style: italic;
+}
+
+/* IMAGE ELEMENTS */
+img {
+    filter: grayscale(75%);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    filter: grayscale(5%);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+/* MEDIA RULE TO ADJUST TO SCREEN SIZE */
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+/* FOOTER ELEMENT */
+footer {
+    padding: 2%;
+    background-color: white;
+}
+
+/* END GENERAL STYLING */
+
+/* NAVBAR STYLING */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(50, 0, 73);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s;
+}
+
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+@media screen and (max-width: 576px) {
+    .navbar a {
+        width: 25%;
+        font-size: 12px
+    }
+}
+
+.navbar a:hover {
+    background-color: #f4f4f4;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar a.active {
+    background-color: darkgray;
+}
+
+/* END NAVBAR STYLING */
+
+/* VIDEO STYLING */
+#coding-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+    #coding-video {
+        display: none;
+    }
+}
+
+.video-text {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+/* END OF VIDEO STYLING */
+
+/* TABLE STYLING */
+* {
+    box-sizing: border-box;
+}
+
+.column-1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: #f2f2f2;
+}
+
+@media screen and (max-width : 567px) {
+    .column-1 {
+        overflow: auto;
+    }
+}
+
+.column-2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color:  rgb(50, 0, 73);
+}
+
+.column-tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* END TABLE STYLING */
+
+/* CONTACT FORM STYLING */
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Arial;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset;
+}
+
+/* SUBMIT BUTTON */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Cambria;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+}
+
+form {
+    border-radius: 5px;
+    bockground-color: #f2f2f2;
+    padding: 10px;
+    font-family: Cambria;
+}
+/* END CONTACT FORM STYLING */

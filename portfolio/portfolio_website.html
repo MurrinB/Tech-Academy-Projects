@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Britnee Murrin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="portfolio_website_style.css">
+    </head>
+
+    <!--START BODY-->
+    <body class="Background">
+        <!--NAVBAR-->
+        <div class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#github">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <!--br ADD SPACE FROM NAVBAR-->
+        <br>
+        <br>
+
+        <!--BACKGROUND VIDEO-->
+        <div id="home">
+            <video autoplay muted loop id="coding-video">
+                <source src="./media/Binary - 29078.mp4" type="video/mp4">
+                    <!--if video fails-->
+                    Your browser does not support HTML5 video. 
+            </video>
+        </div>
+
+        <!--VIDEO TEXT-->
+        <div class="video-text">
+            <h1 class="white-text">Britnee Murrin's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>There are 10 types of people in this world, those who understand binary and those who don't.</q>
+                    <br> -Anonymous
+                    <br>
+                    <br> Welcome to my portfolio website. My name is Britnee. Here you will find information about my background and experience.
+                    <br>
+                    <br> Enjoy and thank you for stopping by!
+                </p>
+            </strong>
+        </div>
+
+        <!--ABOUT SECTION-->
+        <div class="row" id="about">
+            <!--LEFT COLUMN-->
+            <div class="column-2">
+                <img src="media/coding_image_1.jpg" alt="Computer and Coffee Mug">
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="column-1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who enjoys to write code. I started my code writing journey at <a href="https://www.learncodinganywhere.com" target="new">The Tech Academy</a>.
+                    <br>I like a challenge as you can see, through me graduating while still spending time with my two minis and working at DaVita.
+                    <br>I do encounter the occasional restful times where I choose to binge a new series on Netflix or Hulu. Get the popcorn!
+                   <br> I would love to put my passion and drive toward your project. <a href="#contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GITHUB SECTION-->
+        <div class="row" id="github">
+            <!--LEFT COLUMN-->
+            <div class="column-1">
+                <h1>GitHub</h1>
+                <p>
+                    Check out my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/MurrinB" target="new">Britnee Murrin GitHub</a></p>
+                </p>
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="column-2">
+                <a href="https://github.com/MurrinB" target="new"><img src="media/github_photo.jpg" alt="GitHub Symbol"></a>
+            </div>
+        </div>
+
+        <!--CONTACT SECTION-->
+        <div class="row" id="contact">
+            <!--CONTACT IMAGE LEFT COLUMN-->
+            <div class="column-2 column-tall">
+                <img src="media/image_create.jpg" alt="Create">
+            </div>
+            <!--CONTACT FORM RIGHT COLUMN-->
+            <div class="column-1 column-tall">
+                <h1>Contact</h1>
+                <!--WHERE AND HOW TO SEND FORM DATA-->
+                <form action="https://formspree.io/f/moqpyzye" method="POST">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="message" name="message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--FOOTER SECTION-->
+        <footer>
+            <p>
+                <p class="center">&copy; <a href="https://www.linkedin.com/in/britnee-murrin-555859133/" target="new">Britnee Murrin</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
