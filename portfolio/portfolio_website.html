@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" type="text/css" href="portfolio_website_style.css">
+        <script src="JS/main.js" defer></script>
     </head>
 
     <!--START BODY-->
@@ -12,9 +13,10 @@
         <!--NAVBAR-->
         <div class="navbar">
             <a class="active" href="#home">Home</a>
+            <a href="#slideshow">Slideshow</a>
             <a href="#about">About</a>
             <a href="#github">GitHub</a>
-            <a href="#contact">Contact</a>
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
         </div>
         
         <!--br ADD SPACE FROM NAVBAR-->
@@ -45,6 +47,93 @@
             </strong>
         </div>
 
+        <!--SLIDESHOW-->
+
+        <div id="slideshow">
+            <div id="slideshow_background">
+                <div id="slideshow_container">
+                       
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">1 / 6</div>
+                        <img class="Slide_show_images" src="media/Software-Developer.jpg" style="width:100%">
+                            <div class="text">I am a full-stack software developer, <br>
+                                ready to assist you with your project!
+                                <br>
+                                <br>    
+                            </div>
+                            <br>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">2 / 6</div>
+                        <img class="Slide_show_images" src="media/frontend.png" style="width:100%">
+                            <div class="text">I am experienced with: HTML, CSS, JavaScript,
+                                <br>
+                                <br>
+                            </div>
+                            <br>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">3 / 6</div>
+                        <img class="Slide_show_images" src="media/python.png" style="width:100%">
+                            <div class="text">google's popular programming language Python,
+                                <br>
+                                <br> 
+                            </div>
+                            <br>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">4 / 6</div>
+                        <img class="Slide_show_images" src="media/C_Sharp.jpg" style="width:100%">
+                            <div class="text">C#, .NET Framework, ASP.NET, MVC,
+                                <br>
+                                <br>
+                            </div>
+                            <br>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">5 / 6</div>
+                        <img class="Slide_show_images" src="media/SQL.png" style="width:100%">
+                            <div class="text"> backend development, databases, and SQL!
+                                <br>
+                                <br>
+                            </div>
+                            <br>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">6 / 6</div>
+                        <img class="Slide_show_images" src="media/image_create.jpg" style="width:100%">
+                            <div class="text"><a onclick="openForm()" style="color:white; cursor:pointer;">Contact Me!
+                            <br>
+                            <br>
+                            </a>
+                            </div>
+       
+                    </div>
+                    
+
+                    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            <br>
+            <br>
+
+            <div style="text-align: center;">
+            
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+            </div>
+        </div>
+
         <!--ABOUT SECTION-->
         <div class="row" id="about">
             <!--LEFT COLUMN-->
@@ -58,7 +147,7 @@
                     I am a software developer who enjoys to write code. I started my code writing journey at <a href="https://www.learncodinganywhere.com" target="new">The Tech Academy</a>.
                     <br>I like a challenge as you can see, through me graduating while still spending time with my two minis and working at DaVita.
                     <br>I do encounter the occasional restful times where I choose to binge a new series on Netflix or Hulu. Get the popcorn!
-                   <br> I would love to put my passion and drive toward your project. <a href="#contact">Contact</a> me below!
+                   <br> I would love to put my passion and drive toward your project. <a onclick="openForm()" style="cursor: pointer">Contact</a> me below!
                 </p>
             </div>
         </div>
@@ -81,23 +170,21 @@
         </div>
 
         <!--CONTACT SECTION-->
-        <div class="row" id="contact">
-            <!--CONTACT IMAGE LEFT COLUMN-->
-            <div class="column-2 column-tall">
-                <img src="media/image_create.jpg" alt="Create">
-            </div>
-            <!--CONTACT FORM RIGHT COLUMN-->
-            <div class="column-1 column-tall">
-                <h1>Contact</h1>
+        <div id="contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+
+                <div class="form-popup" id="myForm">
                 <!--WHERE AND HOW TO SEND FORM DATA-->
-                <form action="https://formspree.io/f/moqpyzye" method="POST">
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="email" name="email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="message" name="message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+                <form action="https://formspree.io/f/moqpyzye" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name">Name:</label>
+                        <input type="text" placeholder="Please enter your name here" name="name" required>
+                    <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Please enter your email here" required>
+                    <label for="message">Message:</label>
+                        <input type="text" id="message" name="message" placeholder="Please write your message here" required>
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                 </form>
             </div>
         </div>
