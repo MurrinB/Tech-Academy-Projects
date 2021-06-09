@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, intial-scale=1">
+      <link rel="stylesheet" type="text/css" href="pagestyles.css">
+      <script src="pagescripts.js" defer></script>
+      <title>Who Is Britnee?</title>
+  </head>
+  <body>  
+    <video autoplay muted loop id="coding-video">
+      <source src="./media/Binary - 29078.mp4" type="video/mp4">
+          <!--if video fails-->
+          Your browser does not support HTML5 video. 
+    </video>  
+
+    <div id="topnav" class="topnav">
+      <a href="#Home">Home</a>
+      <a href="#About Me">About Me</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Contact Me">Contact Me</a>
+    </div>
+
+    <div id="Home" class="header">
+      <h1>Welcome, I'm Britnee</h1>
+      <p>Here you can learn a little about me. Thanks for stopping by!</p>
+    </div>
+
+
+  <div class="row">
+    <div id="About Me" class="leftcolumn">
+      <div class="card">
+        <h2>About Me</h2>
+        <h5>I am a full stack software developer.</h5>
+        <img class="me-img" src="./media/ProfPic.jpg">
+        <p>I started my code writing journey at <a href="https://www.learncodinganywhere.com" target="new">The Tech Academy</a>. I learned how much I enjoy software development while studying there.
+        I enjoy the challenge of coding. Every day can be different with a new challenge to face and troubleshooting to do! I am excited to see where software development takes me. Currently
+        I work a DaVita, which is a healthcare facility for patients on dialysis due to their kidney failure. I am a compassionate person, which drew me to the healthcare industry. I have a 
+        Bachelor of Science in Biology from the University of Colorado Denver. After I completed my undergraduate degree I got certified in phlebotomy and found DaVita. I do enjoy my job, 
+        but I am ready to start something new! I want to work more with the skills I developed in education from my undergrad and The Tech Academy.
+        <br> 
+        A little personal background about me. I am a mother of two or three, if you count my husband. *Winks* My favorite pass time is spending time with my family! We love to be outside, so 
+        summer days at the pool are the best. Yes, the outdoors are great but, we do enjoy to binge watch a new show. I'll watch a variety of things, 
+        but comedy is my favorite. My children are young, currently 3 years and 7 months, which keeps me busy and laughing. Kids really say and do the silliest things!</p>
+        
+      </div>
+      <div id="Projects" class="card">
+        <h2>Projects</h2>
+        <h5> I have made many programs with multiple languages. I used HTML and CSS to create a webpage of Florence, Oregon. One of my favorite places to be! I created a full 
+            functioning calculator using JavaScript. I used Python to create a phonebook app. I also used Django to create a Checkbook program! This are few of the many programs I have created.
+            Here you can see a few of my projects. You can check out more on my <a href="https://github.com/MurrinB" target="new">GitHub Profile</a></h5>
+        <div class="slideshow">
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides">
+              <img src="./media/FlorenceWeb.PNG" style="width:100%">
+              <div class="text"><a href="FlorencePage/index.html" target="new">Website of Florence Oregon Using HTML/CSS</a></div>
+            </div>
+
+            <div class="mySlides">
+              <img src="./media/Cinema.PNG" style="width:100%">
+              <div class="text"><a href="./Boostrap/academy_cinemas.html" target="new">Mock Cinema Website Using HTML/Bootstrap</a></div>
+            </div>
+
+            <div class="mySlides">
+              <img src="./media/Calculator.PNG" style="width:100%">
+              <div class="text"><a href="./Calculator/calculator.html" target="new">Calculator Using HTML/CSS/JavaScript</a></div>
+            </div>
+
+          </div>
+          <br>
+
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+        <h2>Languages I'm Experienced With</h2>
+        <div class="fakeimg">
+          <img class="lang-img" src="./media/python.png">
+          <img class="lang-img" src="./media/SQL.png">
+          <img class="lang-img" src="./media/frontend.png">
+          <img class="lang-img" src="./media/C_Sharp.jpg">
+        </div>
+       
+        
+      </div>
+
+      <div class="card">
+        <h3>Contact Me</h3>
+        <div id="Contact Me" class="form">
+            <form action="https://formspree.io/f/moqpyzye" method="POST" class="form-container" onsubmit = "return validateForm()">
+                <label for="name">Name:</label>
+                    <input type="text" placeholder="Please enter your name here" name="name" required>
+                <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Please enter your email here" required>
+                <label for="message">Message:</label>
+                    <input type="text" id="message" name="message" placeholder="Please write your message here" required>
+                    <input type="submit" class="btn" value="Submit">
+            </form>
+            <p class = "errorMessage top-arrow" > </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="rightcolumn">
+      <div class="card">
+        <div class="fakeimg"><img class="about-img" src="./media/TheTechAcademy.jpg"></div>
+        <div class="fakeimg"><img class="about-img" src="./media/CUDenver.png"></div>
+        <div class="fakeimg"><img class="about-img" src="./media/DaVita.png"></div>
+        <div class="fakeimg"><img class="about-img" src="./media/MyBabies.jpeg" height="450" width="350"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>
+      <p class="center">&copy; <a href="https://www.linkedin.com/in/britnee-murrin-555859133/" target="new">Britnee Murrin</a></p>
+      <br>
+  </p>
+  </div>
+   
+
+    </body>
+</html>
